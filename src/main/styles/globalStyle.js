@@ -7,14 +7,25 @@ export default StyleSheet.create({
 
   // Tabs
   tabBarUnderLineStyle: {height: 2},
-  tabStyle:{
+  tabStyle: {
     backgroundColor: '#075e54',
+  },
+  activeTabStyle: {backgroundColor: '#075e54'},
+  tabStyle: {backgroundColor: '#075e54'},
+  activeTextStyle:{
+    fontSize:14,
+    fontWeight:'bold',
+    color:'#fff',
+    textTransform:'uppercase'
 
   },
-  tabText:{
+  tabTextStyle:{
     fontSize:14,
-    textTransform:'uppercase',
     fontWeight:'bold',
-    
-  }
+    color:'red',
+    fontWeight: 'bold',
+    textTransform:'uppercase'
+  },
+
+
 });
