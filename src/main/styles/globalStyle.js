@@ -13,19 +13,42 @@ export default StyleSheet.create({
   activeTabStyle: {backgroundColor: '#075e54'},
   tabStyle: {backgroundColor: '#075e54'},
   activeTextStyle:{
-    fontSize:14,
+    fontSize:15,
     fontWeight:'bold',
     color:'#fff',
     textTransform:'uppercase'
 
   },
   tabTextStyle:{
-    fontSize:14,
+    fontSize:15,
     fontWeight:'bold',
-    color:'red',
-    fontWeight: 'bold',
+    color:'#8ac7c2',
     textTransform:'uppercase'
   },
+
+  // badge styles
+  activeBadge:{
+    height:21,
+    backgroundColor:'#ECE5DD',
+    justifyContent:'center',
+    alignSelf:'center',
+    textAlign:'center',
+    marginLeft:5
+  },
+  badge:{
+    height:21,
+    backgroundColor:'#8ac7c2',
+    justifyContent:'center',
+    alignSelf:'center',
+    textAlign:'center',
+    marginLeft:5
+  },
+  badgeText:{
+    fontSize:12,
+    color:'#075e54'
+  }
+
+
 
 
 });
