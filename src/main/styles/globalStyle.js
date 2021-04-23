@@ -46,6 +46,26 @@ export default StyleSheet.create({
   badgeText:{
     fontSize:12,
     color:'#075e54'
+  },
+
+
+  // chat screen
+  badgeChats:{
+   backgroundColor:'#25D366',
+   justifyContent:'center',
+   alignSelf:'center',
+   textAlign:'center',
+   height:24,
+   marginTop:4,
+
+  },
+  badgeTextChats:{
+    fontSize:12,
+    color:'snow',
+    fontWeight:'bold'
+  },
+  fabStyle:{
+    backgroundColor:'#25D366'
   }
 
 

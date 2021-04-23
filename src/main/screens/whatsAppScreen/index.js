@@ -3,12 +3,15 @@ import {View, Text} from 'react-native';
 import HeaderContainer from './header/index';
 import globalStyles from '../../styles/globalStyle';
 import {Badge, Container, Icon, Tab, TabHeading, Tabs} from 'native-base';
+import Chats from './chats/index';
+import Calls from './calls/index';
+import Status from './status/index';
 const Index = () => {
   let TabContent = [
-    {title: 'Camera', Content: 'Camera', cameraTab: true},
-    {title: 'Chats', Content: 'Chats', cameraTab: false, badgeNumber: 4},
-    {title: 'Status', Content: 'Status', cameraTab: false},
-    {title: 'Calls', Content: 'Calls', cameraTab: false},
+    {title: 'Camera', Content: <Text>Camera</Text>, cameraTab: true},
+    {title: 'Chats', Content: <Chats />, cameraTab: false, badgeNumber: 4},
+    {title: 'Status', Content: <Status />, cameraTab: false},
+    {title: 'Calls', Content: <Calls />, cameraTab: false},
   ];
   const [currentTab, setCurrentTab] = useState(1);
 
@@ -63,14 +66,7 @@ const Index = () => {
                   )}
                 </TabHeading>
               }>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  textAlignVertical: 'center',
-                  flex: 1,
-                }}>
-                {item.Content}
-              </Text>
+              {item.Content}
             </Tab>
           );
         })}
