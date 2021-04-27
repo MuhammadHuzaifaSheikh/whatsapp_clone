@@ -1,14 +1,7 @@
 import React from 'react';
 import {
-  Badge,
-  Body,
   Container,
   Content,
-  Left,
-  ListItem,
-  Right,
-  Thumbnail,
-  Text,
   Fab,
   Icon,
 } from 'native-base';

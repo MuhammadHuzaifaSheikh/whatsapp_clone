@@ -23,7 +23,6 @@ const Index = () => {
         initialPage={1}
         tabContainerStyle={{elevation: 0}}
         onChangeTab={({i}) => {
-          console.log(i);
           setCurrentTab(i);
         }}
         tabBarUnderlineStyle={globalStyles.tabBarUnderLineStyle}
